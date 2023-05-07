@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #594f4f;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #e5fcc2;
+		}
+
+		.border {
+			border: 10px solid #e5fcc2;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #45ada8;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="aries" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Aries</a>
+		<a id="taurus" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Taurus</a>
+		<a id="gemini" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Gemini</a>	
+		<a id="cancer" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Cancer</a>
+		<a id="leo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Leo</a>
+		<a id="virgo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Virgo</a>
+		<a id="libra" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Libra</a>
+		<a id="scorpio" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Scorpio</a>
+		<a id="sagittarius" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Sagittarius</a>
+		<a id="capricorn" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Capricorn</a>
+		<a id="aquarius" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Aquarius</a>
+		<a id="pisces" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Pisces</a>
+		
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'aries')
+				window.open("https://www.notion.so/emeraldeternal-astrology/Aries-66782d8fb12448d3a8ae4c50933ca4bf?pvs=4").focus();
+			else if (id == "taurus")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Taurus-12952666749f4f87bde89966397fe6ed?pvs=4").focus();
+			else if (id == "gemini")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Gemini-579ca2680c1a4d7bb8034092a1214844?pvs=4").focus();
+			else if (id == "cancer")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Cancer-3d9656377fbf4dca8b0ad5ffb8959d7e?pvs=4").focus();
+			else if (id == "leo")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Leo-9b1dae6e94ab4072a33506fa95e99334?pvs=4").focus();
+			else if (id == "virgo")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Virgo-5810f3dc2bc34ba29665b6286adf0e6f?pvs=4").focus();
+			else if (id == "libra")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Libra-b22ee7d3cccf4fbf88ec61c5d525e49e?pvs=4").focus();
+			else if (id == "scorpio")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Scorpio-b0ca650189b7466bbfd7afaa7c9dd1b3?pvs=4").focus();
+			else if (id == "sagittarius")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Sagittarius-39cdaee79d0a47169b52dc1cc8ea9904?pvs=4").focus();
+			else if (id == "capricorn")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Capricorn-3f8643da44b545e98e5802a4022a85ff?pvs=4").focus();
+			else if (id == "aquarius")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Aquarius-5d60d377d7514de1a1a7be770d4351b9?pvs=4").focus();
+			else if (id == "pisces")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Pisces-9d97be45f23140dd90f3c2707f6beb7a?pvs=4").focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
