@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #594f4f;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #e5fcc2;
+		}
+
+		.border {
+			border: 10px solid #e5fcc2;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #45ada8;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="sun" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Sun</a>
+		<a id="moon" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Moon</a>
+		<a id="mercury" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Mercury</a>	
+		<a id="venus" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Venus</a>
+		<a id="mars" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Mars</a>
+		<a id="jupiter" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Jupiter</a>
+		<a id="saturn" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Saturn</a>
+		<a id="uranus" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Uranus</a>
+		<a id="neptune" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Neptune</a>
+		<a id="pluto" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Pluto</a>
+		
+		
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'sun')
+				window.open("https://www.notion.so/emeraldeternal-astrology/Sun-e45ec761e7a94f1fa34577007aabf4b3?pvs=4").focus();
+			else if (id == "moon")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Moon-8d20e5b860ea4607bbc356d6982b1f10?pvs=4").focus();
+			else if (id == "mercury")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Mercury-ecc760944c9a4f7599a7a9082512cc42?pvs=4").focus();
+			else if (id == "venus")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Venus-f9993427ed6748008d68505cb9e9a851?pvs=4").focus();
+			else if (id == "mars")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Mars-1699557e58124226a28fade6645e3714?pvs=4").focus();
+			else if (id == "jupiter")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Jupiter-e70d855798a34bb080ae4a4dbca307a9?pvs=4").focus();
+			else if (id == "saturn")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Saturn-f3d3951cf8a942d18f73ad03fb4fa4d2?pvs=4").focus();
+			else if (id == "uranus")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Uranus-d3ee719c3f2e4fb886c7a52837fd2de8?pvs=4").focus();
+			else if (id == "neptune")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Neptune-cd135162e53546fb9961f70d79db8ee9?pvs=4").focus();
+			else if (id == "pluto")
+				window.open("https://www.notion.so/emeraldeternal-astrology/Pluto-7156c206c5d742978256173411b7bb7c?pvs=4").focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
